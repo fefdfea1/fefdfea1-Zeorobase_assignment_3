@@ -26,7 +26,7 @@
     <section>
       <div class="title">
         <p>HOT! TREND</p>
-        <h2>카테고리별 <span>추천 광고상품</span></h2>
+        <h2><span>카테고리별 </span><span>추천 광고상품</span></h2>
       </div>
     </section>
     <!--  생활용품 영역 -->
@@ -47,17 +47,21 @@
         </div>
       </div>
       <div class="middle_area">
-        <div class="carousel_img_bx" role="slider">
-          <img src="./assets/slides/houseware-downy.jpg" alt="다우니상품 이미지" role="img">
-          <img src="./assets/slides/houseware-dandruff.jpg" alt="다음 상품이미지" role="img">
+        <div class="carousel_img_bx" tabindex="0" role="slider" aria-valuemin="1" aria-valuemax="2" aria-valuenow="1"
+          aria-orientation="horizontal">
+          <span class="hide" role="tooltip" aria-label="슬라이더 이미지 영역입니다" aria-hidden="false"></span>
+          <img src="./assets/slides/houseware-downy.jpg" alt="첫번째 상품 이미지입니다" class="non_click">
+          <img src="./assets/slides/houseware-dandruff.jpg" alt="두번째 상품이미지" aria-hidden="true" class="non_click">
+          <span class="hide" role="tooltip" aria-label="상품에 대한 설명글입니다." aria-hidden="false"></span>
           <div class="bannerCaption">
             <p>최초의 99.9% 향균</p>
-            <p>세균 냄새 걱정 벗이 상쾌하게!</p>
+            <p>세균 냄새 걱정 없이 상쾌하게!</p>
           </div>
-          <div class="indicator">
+          <div class="indicator" role="tooltip" aria-label="tap이나 마우스를 사용하여 슬라이드 조작 부분으로 이동가능합니다.">
             <ul>
-              <li class="active"></li>
-              <li></li>
+              <!-- 현재의 슬라이드가 몇번째인지 알려주기 위해 업데이트시 알려주는 role="alert로" -->
+              <li class="active" aria-label="첫번재 슬라이더 이동 버튼입니다" tabindex="0"></li>
+              <li aria-label="두번째 슬라이더 이동 버튼입니다" tabindex="0"></li>
             </ul>
           </div>
         </div>
@@ -68,14 +72,14 @@
             <a href="/">
               <img src="./assets/category/houseware/houseware-basket.jpg" alt="칫솔 바스켓 앤 커버">
               <p class="product_name">왕타 칫솔 바스켓 앤 커버 10p+걸이 5p+바구니</p>
-              <p class="price">12,900 원</p>
+              <p class="price" role="tooltip" aria-label="12,900원 입니다">12,900 원</p>
             </a>
           </div>
           <div class="right_area_product_img_bx">
             <a href="/">
               <img src="./assets/category/houseware/houseware-hairoil.jpg" alt="헤어오일">
               <p class="product_name">로레알파리 엑스트라 오디네리 헤어오일 엑스트라리치</p>
-              <p class="price">10,020 원</p>
+              <p class="price" role="tooltip" aria-label="10,020원 입니다">10,020 원</p>
             </a>
           </div>
           <div class="right_area_product_img_bx">
@@ -84,7 +88,7 @@
               <p class="discount">즉시할인가</p>
               <p class="product_name">데일리워터 물걸레 청소포 대형리필 30매, 10팩</p>
               <div class="rocket_icon">
-                <p class="price">15,410</p>
+                <p class="price" role="tooltip" aria-label="즉시 할인가 15,410원 입니다.">15,410</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품" class="rocket_icon">
               </div>
             </a>
@@ -97,7 +101,7 @@
               <p class="discount">로켓와우회원가</p>
               <p class="product_name">트로비스 핸드형 마사지스택, 1개, 블루</p>
               <div class="rocket_icon">
-                <p class="price">5,740</p>
+                <p class="price" role="tooltip" aria-label="로켓 와우 할인가 5,740원 입니다.">5,740</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품" class="rocket_icon">
               </div>
             </a>
@@ -106,7 +110,7 @@
             <a href="/">
               <img src="./assets/category/houseware/houseware-dryingrack.jpg" alt="탱크건조대">
               <p class="product_name">모던홈 탱크건조대 2단 특대,1개</p>
-              <p class="price">28,550 원</p>
+              <p class="price" role="tooltip" aria-label="28,550 원 입니다.">28,550 원</p>
             </a>
           </div>
           <div class="right_area_product_img_bx">
@@ -114,7 +118,7 @@
               <img src="./assets/category/houseware/houseware-mask.jpg" alt="황사방역마스크">
               <p class="product_name">웹킵스 황사방역마스크 KF94, 초소형 1개입 25개</p>
               <div class="rocket_icon">
-                <p class="price">16,900 원</p>
+                <p class="price" role="tooltip" aria-label="16,900원 입니다.">16,900 원</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품" class="rocket_icon">
               </div>
             </a>
@@ -126,11 +130,11 @@
     <article class="product_container second">
       <div class="left_area">
         <div class="left_top">
-          <h2>생활용품</h2>
+          <h2>주방용품</h2>
           <a href="/">바로가기<i></i></a>
         </div>
         <div class="left_bottom">
-          <p class="keyword_title">HOT키워드</p>
+          <p class="keyword_title" role="tooltip" aria-label="HOT키워드">HOT키워드</p>
           <a href="/" class="keyword">#바디오일</a>
           <a href="/" class="keyword">#액체세제</a>
           <a href="/" class="keyword">#화장실방향제</a>
@@ -140,17 +144,23 @@
         </div>
       </div>
       <div class="middle_area">
-        <div class="carousel_img_bx" role="slider">
-          <img src="./assets/slides/kitchenware-tumbler.jpg" alt="다음 상품이미지" role="img">
-          <img src="./assets/slides/kitchenware-lunchbox.jpg" alt="다우니상품 이미지" role="img">
+        <div class="carousel_img_bx" tabindex="0" role="slider" aria-valuemin="1" aria-valuemax="2" aria-valuenow="1"
+          aria-orientation="horizontal">
+          <!-- 아래와 같은 이유로 위의 carousel_img_bx에 직접 aira-label을 사용하지 않음 -->
+          <span class="hide" role="tooltip" aria-label="슬라이더 이미지 영역입니다" aria-hidden="false"></span>
+          <img src="./assets/slides/kitchenware-tumbler.jpg" alt="첫번째 상품 이미지입니다">
+          <img src="./assets/slides/kitchenware-lunchbox.jpg" alt="두번째 상품 이미지입니다" aria-hidden="true">
+          <!-- bannerCaption에 aria-label을 주면 하위 요소들을 스크린 리더기가 읽지 않아 span으로 새로 만듬 -->
+          <span class="hide" role="tooltip" aria-label="상품에 대한 홍보글입니다." aria-hidden="false"></span>
           <div class="bannerCaption">
             <p>텀블러</p>
             <p>실용성에 디자인까지, 착한 텀블러</p>
           </div>
-          <div class="indicator">
+          <div class="indicator" role="tooltip" aria-label="tap이나 마우스를 사용하여 슬라이드 조작 부분으로 이동가능합니다.">
             <ul>
-              <li class="active"></li>
-              <li></li>
+              <!-- 현재의 슬라이드가 몇번째인지 알려주기 위해 업데이트시 알려주는 role="alert로" -->
+              <li class="active" aria-label="첫번째 슬라이더 이동 버튼입니다."></li>
+              <li aria-label="두번째 슬라이더 이동 버튼입니다."></li>
             </ul>
           </div>
         </div>
@@ -163,7 +173,7 @@
               <p class="discount">로켓와우회원가</p>
               <p class="product_name">코디 아름드리 ize Up 키친타올 250매, 12롤, 1팩</p>
               <div class="rocket_icon">
-                <p class="price">14,300원</p>
+                <p class="price" role="tooltip" aria-label="로켓와우회원가 14,300원 입니다.">14,300원</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품">
               </div>
             </a>
@@ -173,7 +183,7 @@
               <img src="./assets/category/kitchenware/kitchenware-airfryer.jpg" alt="헤어오일">
               <p class="product_name">니코 에어프라이어 오븐겸용 5.2L, DWAF-5.5NK</p>
               <div class="rocket_icon">
-                <p class="price">37,800 원</p>
+                <p class="price" role="tooltip" aria-label="37,800원 입니다.">37,800 원</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품">
               </div>
             </a>
@@ -184,7 +194,7 @@
               <p class="discount">즉시할인가</p>
               <p class="product_name">착한식재료, 종이호일 30cm X 20m, 2개</p>
               <div class="rocket_icon">
-                <p class="price">11,400 원</p>
+                <p class="price" role="tooltip" aria-label="즉시 할인가 11,400원 입니다.">11,400 원</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품" class="rocket_icon">
               </div>
             </a>
@@ -196,7 +206,7 @@
               <img src="./assets/category/kitchenware/kitchenware-zipperbag.jpg" alt="핸드형 마사지스택">
               <p class="product_name">기본에 크린지퍼백 소형 100매, 5개</p>
               <div class="rocket_icon">
-                <p class="price">5,740</p>
+                <p class="price" role="tooltip" aria-label="5,740 원 입니다.">5,740</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품" class="rocket_icon">
               </div>
             </a>
@@ -205,7 +215,7 @@
             <a href="/">
               <img src="./assets/category/kitchenware/kitchenware-paperspoon.jpg" alt="탱크건조대">
               <p class="product_name">메인그린 친환경 종이 위생 스푼, 10개입, 10개</p>
-              <p class="price">4,850 원</p>
+              <p class="price" role="tooltip" aria-label="4,850 원 입니다.">4,850 원</p>
             </a>
           </div>
           <div class="right_area_product_img_bx">
@@ -214,7 +224,7 @@
               <p class="product_name">일리 아라비카 셀렉션 브라질 캡슐커피, 120g 1개</p>
               <p class="discount">로켓와우회원가</p>
               <div class="rocket_icon">
-                <p class="price">12,415 원</p>
+                <p class="price" role="tooltip" aria-label="로켓와우회원가 12,415원 입니다.">12,415 원</p>
                 <img src="./assets/icon/badge-rocket.svg" alt="로켓배송상품" class="rocket_icon">
               </div>
             </a>
